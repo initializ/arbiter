@@ -17,12 +17,13 @@ particular following tools are supported:
 
 ## Install
 
-- Download the [latest release](https://github.com/initializ/arbiter/releases)
-  for your platform and unpack manually
-  For MacOs:
-  /usr/local/bin (unpack in this location)
+ Download the [latest release](https://github.com/initializ/arbiter/releases)
+ for your platform and unpack manually
+  
+ For MacOs:
+ /usr/local/bin (unpack in this location)
 
-  ## Usage
+## Usage
 
 Configure Kubectl's current context to point to your cluster, `Arbiter` will
 look for the kube `.config` file in standard locations (you can point it to custom
