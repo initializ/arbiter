@@ -1,8 +1,9 @@
-module github.com/doitintl/kube-no-trouble
+module github.com/initializ/arbiter
 
 go 1.19
 
 require (
+	github.com/doitintl/kube-no-trouble v0.0.0-20221220100032-00f845354524
 	github.com/ghodss/yaml v1.0.0
 	github.com/hashicorp/go-version v1.6.0
 	github.com/open-policy-agent/opa v0.47.2

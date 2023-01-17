@@ -24,8 +24,8 @@ import (
 )
 
 var (
-	version string = "v1.0.0-alpha"
-	github  string = "https://github.com/initializ/arbiter"
+	version string = "dev"
+	gitSha  string = "dev"
 )
 
 const (
@@ -35,7 +35,7 @@ const (
 )
 
 func generateUserAgent() string {
-	return fmt.Sprintf("default (%s/%s)", version, github)
+	return fmt.Sprintf("default (%s/%s)", version, gitSha)
 }
 
 func getCollectors(collectors []collector.Collector) []map[string]interface{} {
@@ -107,15 +107,15 @@ func main() {
 		log.Fatal().Err(err).Msg("failed to parse config flags")
 	}
 
-	if config.ArbiterVersion {
-		log.Info().Msgf("version %s (git sha %s)", version, github)
+	if config.KubentVersion {
+		log.Info().Msgf("version %s (git sha %s)", version, gitSha)
 		os.Exit(EXIT_CODE_SUCCESS)
 	}
 
 	zerolog.SetGlobalLevel(zerolog.Level(config.LogLevel))
 
 	log.Info().Msg(">>>Arbiter<<<")
-	log.Info().Msgf("version %s (git sha %s)", version, github)
+	log.Info().Msgf("version %s (git sha %s)", version, gitSha)
 
 	log.Info().Msg("Initializing collectors and retrieving data")
 	initCollectors := initializCollectors(config)
