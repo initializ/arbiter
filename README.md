@@ -75,3 +75,8 @@ Usage of ./arbiter:
   -t, --target-version string           target K8s version in SemVer format (autodetected by default)
   -v, --version                         prints the version of Arbiter and exits
 ```
+### Docker Image
+
+To pull docker image : docker pull tech2nightcode/arbiterv1:5
+
+https://hub.docker.com/r/tech2nightcode/arbiterv1
