@@ -3,6 +3,7 @@
 ### 1.0.0 (2022-12-23)
 
 Initial Release
+
 **Features**:
 
 - Added stdin support
