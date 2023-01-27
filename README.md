@@ -76,6 +76,6 @@ Usage of ./arbiter:
   -v, --version                         prints the version of arbiter and exits
 ```
 ### Demo
-<a href="https://asciinema.org/a/dPSu1toGxtJhy4xrjVvSYxq2D?autoplay=1" target="_blank"><img src="https://asciinema.org/a/dPSu1toGxtJhy4xrjVvSYxq2D.svg" /></a>
+<a href="https://asciinema.org/a/dPSu1toGxtJhy4xrjVvSYxq2D" target="_blank"><img src="https://asciinema.org/a/dPSu1toGxtJhy4xrjVvSYxq2D.svg" /></a>
 
 
