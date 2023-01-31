@@ -13,7 +13,7 @@ import (
 	"k8s.io/client-go/restmapper"
 )
 
-const CLUSTER_COLLECTOR_NAME = "Arbiter-Collector"
+const CLUSTER_COLLECTOR_NAME = "cluster-collector"
 
 type ClusterCollector struct {
 	*commonCollector

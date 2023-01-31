@@ -1,4 +1,6 @@
-FROM golang:1.19.4-alpine3.16 as builder 
+FROM golang:1.19.4-alpine3.16
+RUN mkdir -p /usr/local/bin/arbiter
+WORKDIR /arbiter
 COPY go.mod go.sum ./
 COPY scripts scripts
 RUN scripts/alpine-setup.sh
@@ -10,7 +12,7 @@ RUN make all
 
 FROM scratch
 USER 10000:10000
-WORKDIR /bin
-COPY   /bin/new/Arbiter    ./Arbiter
-CMD [ "./Arbiter" ]
+WORKDIR /arbiter
+COPY   /app/arbiter    ./arbiter
+ENTRYPOINT [ "./arbiter" ]
 

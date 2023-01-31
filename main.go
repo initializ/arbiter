@@ -114,7 +114,7 @@ func main() {
 
 	zerolog.SetGlobalLevel(zerolog.Level(config.LogLevel))
 
-	log.Info().Msg(">>>Arbiter<<<")
+	log.Info().Msg(">>>arbiter<<<")
 	log.Info().Msgf("version %s (git sha %s)", version, gitSha)
 
 	log.Info().Msg("Initializing collectors and retrieving data")
