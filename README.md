@@ -1,7 +1,7 @@
 ## Arbiter
 
 **_Check your clusters for deprecated APIs_**
-(**`Arbiter`**)\* is a simple tool to check whether you're using
+(**`arbiter`**)\* is a simple tool to check whether you're using
 any of these API versions in your cluster and therefore should upgrade your
 workloads first, before upgrading your Kubernetes cluster.
 
@@ -25,22 +25,22 @@ particular following tools are supported:
 
 ## Usage
 
-Configure Kubectl's current context to point to your cluster, `Arbiter` will
+Configure Kubectl's current context to point to your cluster, `arbiter` will
 look for the kube `.config` file in standard locations (you can point it to custom
 location using the `-k` switch).
 
-**`Arbiter`** will collect resources from your cluster and report on found issues.
+**`arbiter`** will collect resources from your cluster and report on found issues.
 
 _Please note that you need to have sufficient permissions to read Secrets in the
 cluster in order to use `Helm_` collectors.\*
 
 ```sh
-$./Arbiter
-5:16AM INF >>>Arbiter<<<
+$./arbiter
+5:16AM INF >>>arbiter<<<
 5:16AM INF version v1.0.0-alpha (Github : https://github.com/initializ/arbiter)
 5:16AM INF Initializing collectors and retrieving data
 5:16AM INF Target K8s version^ is 1.23.13
-5:16AM INF Retrieved 5 resources from collector name=Arbiter-Collector
+5:16AM INF Retrieved 5 resources from collector name=arbiter-Collector
 5:16AM INF Retrieved 0 resources from collector name="Helm v3"
 5:16AM INF Loaded ruleset name=deprecated-1-16.rego
 5:16AM INF Loaded ruleset name=deprecated-1-22.rego
@@ -73,10 +73,9 @@ Usage of ./arbiter:
   -o, --output string                   output format - [text|json] (default "text")
   -O, --output-file string              output file, use - for stdout (default "-")
   -t, --target-version string           target K8s version in SemVer format (autodetected by default)
-  -v, --version                         prints the version of Arbiter and exits
+  -v, --version                         prints the version of arbiter and exits
 ```
-### Docker Image
+### Demo
+<a href="https://asciinema.org/a/dPSu1toGxtJhy4xrjVvSYxq2D?autoplay=1" target="_blank"><img src="https://asciinema.org/a/dPSu1toGxtJhy4xrjVvSYxq2D.svg" /></a>
 
-To pull docker image : docker pull tech2nightcode/arbiterv1:5
 
-https://hub.docker.com/r/tech2nightcode/arbiterv1
