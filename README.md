@@ -19,42 +19,41 @@ particular following tools are supported:
 
  Download the [latest release](https://github.com/initializ/arbiter/releases)
  for your platform and unpack.
-  
- For MacOs:
- /usr/local/bin (unpack in this location)^
- 
- (^Suggested step for better functionality)
  
  **`Steps`**
+  
+ **`For MacOs:`**
+ 
+ /usr/local/bin (unpack in this location)^
+ 
+ *(^Suggested step for better functionality)
  
  [a]Download release for Darwin arch
  
  [b]unpack (^)
  
- On the command line run:
+ *On the command line run:
  ```
  arbiter
  
  ```
- For Windows:
+ **`For Windows:`**
  
  [a]Download release for windows(amd64)arch
  
  [b]unpack and execute the arbiter.exe file 
  
- this will automatically open the commandline 
+ *this will automatically open the commandline 
  
- For linux:
+ **`For linux:`**
  
  [a]Download release for linux arch
 
  arm64 || amd64 (check before downloading)
  
- [b]unpack and move the file to bin folder OR 
+ [b]unpack and move the file to bin folder or Open terminal in same directory as arbiter
  
- Open terminal in same directory as arbiter
- 
- on the command line run:
+ *On the command line run:
  
  ```
  ./arbiter
