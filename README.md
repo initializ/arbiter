@@ -26,7 +26,7 @@ particular following tools are supported:
  
  /usr/local/bin (unpack in this location)^
  
- *(^Suggested step for better functionality)
+ **`(^Suggested step for better functionality)`**
  
  [a]Download release for Darwin arch
  
@@ -51,7 +51,7 @@ particular following tools are supported:
 
  arm64 || amd64 (check before downloading)
  
- [b]unpack and move the file to bin folder or Open terminal in same directory as arbiter
+ [b]unpack and move the file to bin folder or open terminal in same directory as arbiter
  
  *On the command line run:
  
