@@ -22,8 +22,13 @@ particular following tools are supported:
   
  For MacOs:
  /usr/local/bin (unpack in this location)^
+ 
+ (^Suggested step for better functionality)
+ 
  **`Steps`**
+ 
  [a]Download release for Darwin arch
+ 
  [b]unpack (^)
  
  On the command line run:
@@ -32,19 +37,25 @@ particular following tools are supported:
  
  ```
  For Windows:
- [a]Download release for windows(amd64) arch
+ 
+ [a]Download release for windows(amd64)arch
+ 
  [b]unpack and execute the arbiter.exe file 
  
  this will automatically open the commandline 
  
  For linux:
+ 
  [a]Download release for linux arch
+
  arm64 || amd64 (check before downloading)
+ 
  [b]unpack and move the file to bin folder OR 
  
  Open terminal in same directory as arbiter
  
  on the command line run:
+ 
  ```
  ./arbiter
  
