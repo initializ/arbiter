@@ -61,6 +61,33 @@ particular following tools are supported:
  ```
 this will execute arbiter.
 
+### Docker Image
+
+We also publish official container image, which can be found at:
+`ghcr.io/initializ/arbiter:latest`
+
+To run locally, you'll need to provide credentials, e.g. by sharing your
+kubectl config:
+
+```sh
+$ docker run -it --rm \
+    -v "${HOME}/.kube/config:/.kubeconfig" \
+   docker pull ghcr.io/initializ/arbiter:latest \
+    -k /.kubeconfig
+```
+
+You can use `kubectl run` to run inside a K8S cluster, as a one-off. In that
+case the credentials will be picked up via the pod's service account from the
+environment, but you'll want to grant relevant permissions first (see
+[docs/k8s-sa-and-role-example.yaml](docs/k8s-sa-and-role-example.yaml)):
+
+```sh
+$ kubectl run arbiter --restart=Never --rm -i --tty \
+    --image ghcr.io/doitintl/kube-no-trouble:latest \
+    --overrides='{"spec": {"serviceAccount": "arbiter"}}'
+```
+
+
 ## Usage
 
 Configure Kubectl's current context to point to your cluster, `arbiter` will
