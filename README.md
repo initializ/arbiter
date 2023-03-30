@@ -83,7 +83,7 @@ environment, but you'll want to grant relevant permissions first (see
 
 ```sh
 $ kubectl run arbiter --restart=Never --rm -i --tty \
-    --image ghcr.io/doitintl/kube-no-trouble:latest \
+    --image ghcr.io/initializ/arbiter:latest \
     --overrides='{"spec": {"serviceAccount": "arbiter"}}'
 ```
 
