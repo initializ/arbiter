@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: arbiter
+  apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: arbiter-reader
+rules:
+- apiGroups: ["*"]
+  resources: ["*"]
+  verbs: ["get", "list"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: arbiter-read-everything
+subjects:
+- kind: ServiceAccount
+  name: arbiter
+  namespace: default
+roleRef:
+  kind: ClusterRole
+  name: arbiter-reader
+  apiGroup: rbac.authorization.k8s.io
